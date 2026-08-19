@@ -89,42 +89,43 @@ export default function TestimonialsSection() {
         </h2>
       </FadeIn>
 
-      <div className="max-w-6xl mx-auto columns-1 sm:columns-2 lg:columns-3 gap-5">
-        {TESTIMONIALS.map((t, i) => (
-          <FadeIn key={t.name} delay={(i % 3) * 0.12} y={30} className="break-inside-avoid mb-5">
-            <div
-              data-testid={`testimonial-card-${i + 1}`}
-              className="bg-black border border-white/25 rounded-2xl p-6 sm:p-7 hover:border-white/50 transition-colors duration-300"
-            >
-              <p
-                data-testid={`testimonial-quote-${i + 1}`}
-                className="text-[#D7E2EA] font-light leading-relaxed text-sm sm:text-base"
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-5">
+        {TESTIMONIALS.map((t, i) => {
+          const spans = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7", "md:col-span-7", "md:col-span-5"];
+          return (
+            <FadeIn key={t.name} delay={(i % 2) * 0.12} y={30} className={spans[i % spans.length]}>
+              <div
+                data-testid={`testimonial-card-${i + 1}`}
+                className="h-full bg-black border border-white/40 rounded-[2rem] p-6 sm:p-7 flex items-center gap-5 sm:gap-6 hover:border-white/70 transition-colors duration-300"
               >
-                {t.quote}
-              </p>
-              <div className="flex items-center gap-3 mt-6">
-                <img
-                  data-testid={`testimonial-avatar-${i + 1}`}
-                  src={t.avatar}
-                  alt={t.name}
-                  loading="lazy"
-                  className="w-11 h-11 rounded-full object-cover border border-white/30 shrink-0"
-                />
-                <div>
-                  <p data-testid={`testimonial-name-${i + 1}`} className="text-white font-bold text-sm sm:text-base leading-tight">
+                <div className="shrink-0 w-24 sm:w-28">
+                  <img
+                    data-testid={`testimonial-avatar-${i + 1}`}
+                    src={t.avatar}
+                    alt={t.name}
+                    loading="lazy"
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border border-white/40 mb-3"
+                  />
+                  <p data-testid={`testimonial-name-${i + 1}`} className="text-white font-bold text-xs sm:text-sm leading-tight uppercase">
                     {t.name}
                   </p>
                   <p
                     data-testid={`testimonial-title-${i + 1}`}
-                    className="text-[#D7E2EA] opacity-60 text-xs sm:text-sm leading-tight mt-0.5"
+                    className="text-[#D7E2EA] opacity-60 text-[10px] sm:text-xs leading-tight mt-1 uppercase tracking-wide"
                   >
                     {t.title}
                   </p>
                 </div>
+                <p
+                  data-testid={`testimonial-quote-${i + 1}`}
+                  className="text-[#D7E2EA] font-light leading-relaxed text-xs sm:text-sm"
+                >
+                  {t.quote}
+                </p>
               </div>
-            </div>
-          </FadeIn>
-        ))}
+            </FadeIn>
+          );
+        })}
       </div>
     </section>
   );
