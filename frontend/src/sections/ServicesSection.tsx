@@ -3,9 +3,9 @@ import { FadeIn } from "../components/FadeIn";
 const SERVICES = [
   {
     number: "01",
-    name: "3D Modeling",
+    name: "Graphics Designing",
     description:
-      "Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.",
+      "Eye-catching visual designs for your brand — from social media creatives to marketing materials — crafted to communicate clearly and leave a lasting impression.",
   },
   {
     number: "02",
@@ -15,18 +15,12 @@ const SERVICES = [
   },
   {
     number: "03",
-    name: "Motion Design",
-    description:
-      "Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.",
-  },
-  {
-    number: "04",
     name: "Branding",
     description:
       "Crafting cohesive visual identities — from logos to full brand systems — that communicate a clear and memorable presence.",
   },
   {
-    number: "05",
+    number: "04",
     name: "Web Design",
     description:
       "Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.",

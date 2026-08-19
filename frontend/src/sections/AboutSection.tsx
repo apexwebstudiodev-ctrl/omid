@@ -38,7 +38,7 @@ const DECOR = [
 ];
 
 const ABOUT_TEXT =
-  "With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!";
+  "As a passionate designer, I focus on branding, web design, and user experience, I truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!";
 
 export default function AboutSection() {
   return (
