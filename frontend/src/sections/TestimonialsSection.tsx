@@ -55,10 +55,10 @@ const TESTIMONIALS: Testimonial[] = [
 ];
 
 const FLOATERS = [
-  { emoji: "😮", className: "left-[3%] top-[12%] text-4xl sm:text-5xl", duration: 5, testId: "floater-surprised" },
-  { emoji: "🌟", className: "right-[4%] top-[20%] text-3xl sm:text-4xl", duration: 4, testId: "floater-star" },
-  { emoji: "✨", className: "left-[6%] bottom-[18%] text-3xl sm:text-4xl", duration: 6, testId: "floater-sparkles" },
-  { emoji: "🔥", className: "right-[7%] bottom-[12%] text-3xl sm:text-5xl", duration: 4.5, testId: "floater-fire" },
+  { emoji: "😮", className: "left-[3%] top-[12%] text-5xl sm:text-7xl", duration: 4, testId: "floater-surprised" },
+  { emoji: "🌟", className: "right-[4%] top-[20%] text-4xl sm:text-6xl", duration: 3, testId: "floater-star" },
+  { emoji: "✨", className: "left-[6%] bottom-[18%] text-4xl sm:text-6xl", duration: 4.5, testId: "floater-sparkles" },
+  { emoji: "🔥", className: "right-[7%] bottom-[12%] text-5xl sm:text-7xl", duration: 3.5, testId: "floater-fire" },
 ];
 
 export default function TestimonialsSection() {
@@ -97,7 +97,7 @@ export default function TestimonialsSection() {
           key={f.testId}
           data-testid={f.testId}
           className={`absolute select-none pointer-events-none ${f.className}`}
-          animate={{ y: [0, -14, 0], rotate: [0, 6, -4, 0] }}
+          animate={{ y: [0, -24, 0], rotate: [0, 12, -10, 0], scale: [1, 1.15, 1] }}
           transition={{ duration: f.duration, repeat: Infinity, ease: "easeInOut" }}
         >
           {f.emoji}
@@ -110,7 +110,15 @@ export default function TestimonialsSection() {
           className="font-black text-center leading-none tracking-tight mb-14 sm:mb-18 md:mb-20"
           style={{ fontSize: "clamp(2.2rem, 7vw, 90px)" }}
         >
-          <span className="hero-heading">What Clients Are Saying</span> 🤩
+          <span className="hero-heading">What Clients Are Saying</span>{" "}
+          <motion.span
+            className="inline-block"
+            style={{ fontSize: "1.15em" }}
+            animate={{ rotate: [0, 12, -12, 0], scale: [1, 1.2, 1] }}
+            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            🤩
+          </motion.span>
         </h2>
       </FadeIn>
 
