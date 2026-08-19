@@ -22,7 +22,8 @@ Dark (#0C0C0C) single-page 3D Creator portfolio landing page (originally specced
 - Custom cursor: glowing pale orb + 2 slow trailing wisps (spring physics), hover grow on links, default cursor hidden on pointer-fine devices
 - Masked line-reveal hero heading, magnetic portrait, staggered FadeIns
 - Verified: all sections screenshot-tested, marquee rows (33/30 tiles) scrolling, heading text "HI, I'M OMID", no blocking console errors
-- Testimonials section (2026-08-19): "What Clients Are Saying 🤩" gradient heading (emoji excluded from text-clip), 3-col masonry (CSS columns), 6 black cards with thin white border, quote top / avatar bottom-left / name+title bottom-right, 4 floating animated emojis (😮🌟✨🔥) at edges. Testimonial content is SAMPLE DATA (invented quotes/names, randomuser.me avatars)
+- Testimonials section (2026-08-19): "What Clients Are Saying 🤩" gradient heading (emoji excluded from text-clip), staggered wide/narrow mosaic (user-supplied reference), horizontal cards: avatar+name+title left, quote right, 4 floating animated emojis (😮🌟✨🔥). Testimonial content is SAMPLE DATA (invented quotes/names, randomuser.me avatars)
+- Video-reference alignment (2026-08-19, per user Wix Studio reference video): navbar link 2 changed Price → Customers (anchors to #testimonials); new "Trusted by bold brands" auto-scrolling client wordmark strip after hero (CSS marquee, pauses on hover); contact rebuilt as white "LET'S GET IN TOUCH" block (email + gradient SEND mailto button) + dark footer with 3D shapes row, giant gradient "OMID", SOCIAL/CONTACT columns
 
 ## Backlog
 - P1: Real "Live Project" URLs for the 3 project cards (currently MOCKED, buttons are inert)

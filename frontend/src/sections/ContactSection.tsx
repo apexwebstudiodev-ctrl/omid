@@ -1,98 +1,152 @@
-import { Mail, Phone, Instagram, ArrowUpRight } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
+import { motion } from "framer-motion";
 import { FadeIn } from "../components/FadeIn";
-import { ContactButton } from "../components/ContactButton";
 
-const LINKS = [
+const SHAPES = [
   {
-    label: "apexwebstudio.dev@gmail.com",
-    href: "mailto:apexwebstudio.dev@gmail.com",
-    icon: Mail,
-    testId: "contact-email-link",
+    src: "https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png",
+    alt: "Moon 3D shape",
+    testId: "footer-shape-moon",
   },
   {
-    label: "+974 7244 7536",
-    href: "https://wa.me/97472447536",
-    icon: Phone,
-    testId: "contact-whatsapp-link",
+    src: "https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png",
+    alt: "Abstract 3D shape",
+    testId: "footer-shape-object",
   },
   {
-    label: "@apexwebstudio.dev",
-    href: "https://instagram.com/apexwebstudio.dev",
-    icon: Instagram,
-    testId: "contact-instagram-link",
+    src: "https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png",
+    alt: "Lego 3D shape",
+    testId: "footer-shape-lego",
+  },
+  {
+    src: "https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png",
+    alt: "3D shapes group",
+    testId: "footer-shape-group",
   },
 ];
 
 export default function ContactSection() {
   return (
-    <section
-      id="contact"
-      data-testid="contact-section"
-      className="relative bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-24 sm:pt-32 pb-10 flex flex-col items-center overflow-hidden"
-    >
-      <FadeIn y={40}>
-        <h2
-          data-testid="contact-heading"
-          className="hero-heading font-black uppercase leading-none tracking-tight text-center"
-          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
-        >
-          Let&rsquo;s talk
-        </h2>
-      </FadeIn>
+    <section id="contact" data-testid="contact-section" className="relative">
+      <div className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 flex flex-col items-center text-center">
+        <FadeIn y={40}>
+          <h2
+            data-testid="contact-heading"
+            className="text-[#0C0C0C] font-black uppercase leading-none tracking-tight"
+            style={{ fontSize: "clamp(2.4rem, 10vw, 130px)" }}
+          >
+            Let&rsquo;s get in touch
+          </h2>
+        </FadeIn>
 
-      <FadeIn delay={0.15} y={20} className="mt-6 sm:mt-8">
-        <p
-          data-testid="contact-subtext"
-          className="text-[#D7E2EA] font-light uppercase tracking-wide text-center opacity-70"
-          style={{ fontSize: "clamp(0.8rem, 1.4vw, 1.1rem)" }}
-        >
-          have an idea? let&rsquo;s turn it into something unforgettable
-        </p>
-      </FadeIn>
+        <FadeIn delay={0.15} y={20} className="mt-8 sm:mt-10">
+          <a
+            data-testid="contact-email-link"
+            href="mailto:apexwebstudio.dev@gmail.com"
+            className="text-[#0C0C0C] font-medium tracking-wide hover:opacity-60 transition-opacity duration-200"
+            style={{ fontSize: "clamp(1rem, 2.4vw, 1.8rem)" }}
+          >
+            apexwebstudio.dev@gmail.com
+          </a>
+        </FadeIn>
 
-      <FadeIn delay={0.25} y={20} className="mt-10 sm:mt-12">
-        <ContactButton testId="footer-contact-button" />
-      </FadeIn>
-
-      <div className="mt-16 sm:mt-20 md:mt-24 w-full max-w-3xl flex flex-col">
-        {LINKS.map((link, i) => {
-          const Icon = link.icon;
-          return (
-            <FadeIn key={link.testId} delay={0.1 + i * 0.1} y={20}>
-              <a
-                href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                data-testid={link.testId}
-                className="group flex items-center justify-between gap-4 py-5 sm:py-6 border-t border-[rgba(215,226,234,0.15)] text-[#D7E2EA] hover:opacity-70 transition-opacity duration-200"
-              >
-                <span className="flex items-center gap-4 sm:gap-5">
-                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 opacity-70" strokeWidth={1.5} />
-                  <span
-                    className="font-medium uppercase tracking-wider"
-                    style={{ fontSize: "clamp(0.85rem, 2vw, 1.4rem)" }}
-                  >
-                    {link.label}
-                  </span>
-                </span>
-                <ArrowUpRight
-                  className="w-5 h-5 sm:w-6 sm:h-6 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200"
-                  strokeWidth={1.5}
-                />
-              </a>
-            </FadeIn>
-          );
-        })}
+        <FadeIn delay={0.25} y={20} className="mt-10 sm:mt-12">
+          <motion.a
+            href="mailto:apexwebstudio.dev@gmail.com"
+            data-testid="contact-send-button"
+            className="inline-block rounded-full px-12 py-4 sm:px-16 sm:py-5 text-sm sm:text-base text-white font-medium uppercase tracking-widest"
+            style={{
+              background: "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",
+              boxShadow: "0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset",
+              outline: "2px solid #0C0C0C",
+              outlineOffset: "-3px",
+            }}
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 18 }}
+          >
+            Send
+          </motion.a>
+        </FadeIn>
       </div>
 
-      <div className="mt-16 sm:mt-20 w-full max-w-3xl flex justify-between items-center border-t border-[rgba(215,226,234,0.15)] pt-6">
-        <p data-testid="footer-copyright" className="text-[#D7E2EA] opacity-50 text-xs sm:text-sm uppercase tracking-widest">
-          &copy; 2026 omid
-        </p>
-        <p data-testid="footer-tagline" className="text-[#D7E2EA] opacity-50 text-xs sm:text-sm uppercase tracking-widest">
-          3d creator
-        </p>
-      </div>
+      <footer data-testid="site-footer" className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 pb-8 flex flex-col items-center overflow-hidden">
+        <FadeIn y={30} className="w-full">
+          <div className="flex justify-center items-center gap-8 sm:gap-12 md:gap-16 flex-wrap">
+            {SHAPES.map((shape) => (
+              <img
+                key={shape.testId}
+                data-testid={shape.testId}
+                src={shape.src}
+                alt={shape.alt}
+                loading="lazy"
+                draggable={false}
+                className="w-14 sm:w-20 md:w-24 h-auto"
+              />
+            ))}
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1} y={40} className="w-full mt-10 sm:mt-14">
+          <p
+            data-testid="footer-name"
+            className="hero-heading font-black uppercase text-center leading-none tracking-tight"
+            style={{ fontSize: "clamp(4rem, 20vw, 280px)" }}
+          >
+            Omid
+          </p>
+        </FadeIn>
+
+        <div className="w-full max-w-5xl mt-10 sm:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-10 border-t border-[rgba(215,226,234,0.15)] pt-10">
+          <div>
+            <p data-testid="footer-social-heading" className="text-[#D7E2EA] font-bold uppercase tracking-widest text-sm mb-4">
+              Social
+            </p>
+            <a
+              data-testid="contact-instagram-link"
+              href="https://instagram.com/apexwebstudio.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-[#D7E2EA] opacity-70 hover:opacity-100 transition-opacity duration-200 text-sm sm:text-base"
+            >
+              <Instagram className="w-4 h-4" strokeWidth={1.5} />
+              @apexwebstudio.dev
+            </a>
+          </div>
+          <div>
+            <p data-testid="footer-contact-heading" className="text-[#D7E2EA] font-bold uppercase tracking-widest text-sm mb-4">
+              Contact
+            </p>
+            <a
+              data-testid="footer-email-link"
+              href="mailto:apexwebstudio.dev@gmail.com"
+              className="flex items-center gap-3 text-[#D7E2EA] opacity-70 hover:opacity-100 transition-opacity duration-200 text-sm sm:text-base mb-3"
+            >
+              <Mail className="w-4 h-4" strokeWidth={1.5} />
+              apexwebstudio.dev@gmail.com
+            </a>
+            <a
+              data-testid="contact-whatsapp-link"
+              href="https://wa.me/97472447536"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-[#D7E2EA] opacity-70 hover:opacity-100 transition-opacity duration-200 text-sm sm:text-base"
+            >
+              <Phone className="w-4 h-4" strokeWidth={1.5} />
+              +974 7244 7536
+            </a>
+          </div>
+        </div>
+
+        <div className="w-full max-w-5xl mt-10 flex justify-between items-center border-t border-[rgba(215,226,234,0.15)] pt-6">
+          <p data-testid="footer-copyright" className="text-[#D7E2EA] opacity-50 text-xs sm:text-sm uppercase tracking-widest">
+            &copy; 2026 omid
+          </p>
+          <p data-testid="footer-tagline" className="text-[#D7E2EA] opacity-50 text-xs sm:text-sm uppercase tracking-widest">
+            3d creator
+          </p>
+        </div>
+      </footer>
     </section>
   );
 }

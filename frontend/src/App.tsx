@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import HeroSection from "./sections/HeroSection";
+import ClientLogosSection from "./sections/ClientLogosSection";
 import MarqueeSection from "./sections/MarqueeSection";
 import AboutSection from "./sections/AboutSection";
 import ServicesSection from "./sections/ServicesSection";
@@ -41,6 +42,7 @@ function App() {
     <main data-testid="app-wrapper" className="bg-[#0C0C0C] min-h-screen" style={{ overflowX: "clip" }}>
       <CustomCursor />
       <HeroSection />
+      <ClientLogosSection />
       <MarqueeSection />
       <AboutSection />
       <ServicesSection />
