@@ -5,6 +5,7 @@ import MarqueeSection from "./sections/MarqueeSection";
 import AboutSection from "./sections/AboutSection";
 import ServicesSection from "./sections/ServicesSection";
 import ProjectsSection from "./sections/ProjectsSection";
+import TestimonialsSection from "./sections/TestimonialsSection";
 import ContactSection from "./sections/ContactSection";
 import { CustomCursor } from "./components/CustomCursor";
 
@@ -44,6 +45,7 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <ProjectsSection />
+      <TestimonialsSection />
       <ContactSection />
     </main>
   );
