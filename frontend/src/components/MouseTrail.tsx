@@ -15,6 +15,14 @@ const TRAIL_IMAGES = [
   "/projects/trail-2.jpg",
   "/projects/trail-3.jpg",
   "/projects/trail-4.jpg",
+  "/projects/trail-5.jpg",
+  "/projects/trail-6.jpg",
+  "/projects/trail-7.jpg",
+  "/projects/trail-8.jpg",
+  "/projects/trail-9.jpg",
+  "/projects/trail-10.jpg",
+  "/projects/trail-11.jpg",
+  "/projects/trail-12.jpg",
 ];
 
 interface TrailItem {
