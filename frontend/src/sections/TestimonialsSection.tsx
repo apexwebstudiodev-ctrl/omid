@@ -11,46 +11,40 @@ interface Testimonial {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    quote:
-      "Omid took our vague idea and turned it into a 3D experience that made our whole team say wow. The attention to detail is unreal — every texture, every light bounce feels intentional.",
-    name: "Sarah Mitchell",
-    title: "Founder, Nextlevel Studio",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    quote: "Amazing design from Omid — very unique and brilliant.",
+    name: "Eagle Fitness Centre",
+    title: "Fitness Gym",
+    avatar: "/projects/pfp-gym.png",
   },
   {
-    quote:
-      "Working with Omid felt like cheating. Our landing page conversions jumped 40% after the redesign.",
-    name: "Daniel Kim",
-    title: "CEO, Orbit Web3",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    quote: "WOW! Spectacular work from him — definitely gonna hire him for our next project in 3 months.",
+    name: "The Golden Crumb",
+    title: "Bakery",
+    avatar: "/projects/pfp-bread.png",
   },
   {
-    quote:
-      "The renders he delivered looked straight out of a sci-fi film. Clients keep asking who made our product visuals.",
-    name: "Layla Haddad",
-    title: "Marketing Director, Vitara",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    quote: "All of the animation and design choices — it was all PERFECT!",
+    name: "Tandoor Flame",
+    title: "Restaurant",
+    avatar: "/projects/pfp-flame.png",
   },
   {
-    quote:
-      "Fast, communicative, and insanely talented. He rebuilt our brand identity in 3D and it finally feels like us — bold, modern, unforgettable.",
-    name: "Marcus Chen",
-    title: "Co-founder, Aura",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    quote: "Amazing design from Omid — very unique and brilliant.",
+    name: "Eagle Fitness Centre",
+    title: "Fitness Gym",
+    avatar: "/projects/pfp-gym.png",
   },
   {
-    quote:
-      "I've hired a lot of designers. Nobody ships motion design this clean, this fast. The hero animation alone was worth every penny.",
-    name: "Amelia Torres",
-    title: "Product Lead, Solaris Digital",
-    avatar: "https://randomuser.me/api/portraits/women/17.jpg",
+    quote: "WOW! Spectacular work from him — definitely gonna hire him for our next project in 3 months.",
+    name: "The Golden Crumb",
+    title: "Bakery",
+    avatar: "/projects/pfp-bread.png",
   },
   {
-    quote:
-      "From the first moodboard to the final render, everything was premium. Our investors literally paused the pitch to compliment the visuals.",
-    name: "James Okafor",
-    title: "Founder, Luminex",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    quote: "All of the animation and design choices — it was all PERFECT!",
+    name: "Tandoor Flame",
+    title: "Restaurant",
+    avatar: "/projects/pfp-flame.png",
   },
 ];
 

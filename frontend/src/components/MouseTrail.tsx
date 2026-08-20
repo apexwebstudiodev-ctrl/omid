@@ -11,6 +11,10 @@ const TRAIL_IMAGES = [
   "/projects/gym-1.jpg",
   "/projects/gym-2.jpg",
   "/projects/gym-3.jpg",
+  "/projects/trail-1.jpg",
+  "/projects/trail-2.jpg",
+  "/projects/trail-3.jpg",
+  "/projects/trail-4.jpg",
 ];
 
 interface TrailItem {
@@ -68,7 +72,7 @@ export const MouseTrail = ({ containerRef }: MouseTrailProps) => {
           src={item.src}
           alt=""
           draggable={false}
-          className="absolute w-28 h-20 sm:w-36 sm:h-24 object-cover rounded-xl border border-white/25 shadow-2xl"
+          className="absolute w-40 h-28 sm:w-52 sm:h-36 object-cover rounded-2xl border border-white/25 shadow-2xl"
           style={{ left: item.x, top: item.y, x: "-50%", y: "-50%" }}
           initial={{ opacity: 0, scale: 0.5, rotate: item.rotate }}
           animate={{ opacity: [0, 1, 1, 0], scale: [0.5, 1, 1, 0.92], rotate: [item.rotate, item.rotate, item.rotate - 4, item.rotate - 6], marginTop: [0, -18, -42, -60] }}
