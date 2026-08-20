@@ -1,7 +1,8 @@
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { FadeIn } from "../components/FadeIn";
-import { Magnet } from "../components/Magnet";
 import { ContactButton } from "../components/ContactButton";
+import { MouseTrail } from "../components/MouseTrail";
 
 const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 
@@ -12,12 +13,11 @@ const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-const PORTRAIT_URL =
-  "https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png";
-
 export default function HeroSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
-    <section data-testid="hero-section" className="relative h-screen flex flex-col" style={{ overflowX: "clip" }}>
+    <section ref={sectionRef} data-testid="hero-section" className="relative h-screen flex flex-col" style={{ overflowX: "clip" }}>
       <FadeIn delay={0} y={-20} as="nav" className="relative z-30">
         <div className="flex justify-between px-6 md:px-10 pt-6 md:pt-8">
           {NAV_LINKS.map((link) => (
@@ -45,24 +45,7 @@ export default function HeroSection() {
         </motion.h1>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
-        <FadeIn delay={0.6} y={30}>
-          <Magnet
-            padding={150}
-            strength={3}
-            activeTransition="transform 0.3s ease-out"
-            inactiveTransition="transform 0.6s ease-in-out"
-          >
-            <img
-              data-testid="hero-portrait"
-              src={PORTRAIT_URL}
-              alt="Omid 3D portrait"
-              className="w-full h-auto pointer-events-none"
-              draggable={false}
-            />
-          </Magnet>
-        </FadeIn>
-      </div>
+      <MouseTrail containerRef={sectionRef} />
 
       <div className="relative z-20 mt-auto flex justify-between items-end px-6 md:px-10 pb-7 sm:pb-8 md:pb-10">
         <FadeIn delay={0.35} y={20}>

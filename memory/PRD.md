@@ -32,4 +32,6 @@ Dark (#0C0C0C) single-page 3D Creator portfolio landing page (originally specced
 - P3: Replace remaining sample projects (03 Nextlevel, 04 Aura, 05 Solaris) with real work
 
 ## Real project assets (2026-08-20)
-- 01 The Golden Crumb (Personal) and 02 Tandoor Flame (Client) added from user-uploaded screenshots; cropped with PIL to card ratios (col1-top 1.9:1, col1-bottom 1.28:1, col2 1.12:1) and stored in /app/frontend/public/projects/ (gc-1..3.jpg, tf-1..3.jpg)
+- 01 The Golden Crumb (Personal) and 02 Tandoor Flame (Personal) from user screenshots; 03 Eagle Fitness Centre (Client, gym) added 2026-08-21. Sample projects (Nextlevel/Aura/Solaris) removed. Crops in /app/frontend/public/projects/ (gc-1..3, tf-1..3, gym-1..3 .jpg), PIL-cropped to tile ratios with brightness/contrast tweaks
+- Hero portrait (figma 3D character) REMOVED per user request (2026-08-21)
+- MouseTrail (2026-08-21): hero-section-only cursor trail — spawns random project crops behind cursor with random ±12° rotation, floats up, fades after ~1s, pointer-events-none, desktop-only (pointer:fine), throttled by 120px cursor travel
