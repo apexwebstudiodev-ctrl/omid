@@ -13,6 +13,18 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     number: "01",
+    name: "The Golden Crumb",
+    category: "Personal",
+    images: ["/projects/gc-1.jpg", "/projects/gc-2.jpg", "/projects/gc-3.jpg"],
+  },
+  {
+    number: "02",
+    name: "Tandoor Flame",
+    category: "Client",
+    images: ["/projects/tf-1.jpg", "/projects/tf-2.jpg", "/projects/tf-3.jpg"],
+  },
+  {
+    number: "03",
     name: "Nextlevel Studio",
     category: "Client",
     images: [
@@ -22,7 +34,7 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    number: "02",
+    number: "04",
     name: "Aura Brand Identity",
     category: "Personal",
     images: [
@@ -32,7 +44,7 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    number: "03",
+    number: "05",
     name: "Solaris Digital",
     category: "Client",
     images: [

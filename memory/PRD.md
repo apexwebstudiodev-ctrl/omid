@@ -26,7 +26,10 @@ Dark (#0C0C0C) single-page 3D Creator portfolio landing page (originally specced
 - Video-reference alignment (2026-08-19, per user Wix Studio reference video): navbar link 2 changed Price → Customers (anchors to #testimonials); new "Trusted by bold brands" auto-scrolling client wordmark strip after hero (CSS marquee, pauses on hover); contact rebuilt as white "LET'S GET IN TOUCH" block (email + gradient SEND mailto button) + dark footer with 3D shapes row, giant gradient "OMID", SOCIAL/CONTACT columns
 
 ## Backlog
-- P1: Real "Live Project" URLs for the 3 project cards (currently MOCKED, buttons are inert)
-- P2: Actual pricing content (nav "Price" currently anchors to Services)
+- P1: Real "Live Project" URLs for the project cards (currently MOCKED, buttons are inert)
 - P2: Case-study detail pages per project
 - P2: Mobile nav menu refinement
+- P3: Replace remaining sample projects (03 Nextlevel, 04 Aura, 05 Solaris) with real work
+
+## Real project assets (2026-08-20)
+- 01 The Golden Crumb (Personal) and 02 Tandoor Flame (Client) added from user-uploaded screenshots; cropped with PIL to card ratios (col1-top 1.9:1, col1-bottom 1.28:1, col2 1.12:1) and stored in /app/frontend/public/projects/ (gc-1..3.jpg, tf-1..3.jpg)
