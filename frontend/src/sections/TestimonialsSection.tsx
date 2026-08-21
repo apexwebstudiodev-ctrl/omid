@@ -49,10 +49,10 @@ const TESTIMONIALS: Testimonial[] = [
 ];
 
 const FLOATERS = [
-  { emoji: "😮", className: "left-[3%] top-[12%] text-5xl sm:text-7xl", duration: 4, testId: "floater-surprised" },
-  { emoji: "🌟", className: "right-[4%] top-[20%] text-4xl sm:text-6xl", duration: 3, testId: "floater-star" },
-  { emoji: "✨", className: "left-[6%] bottom-[18%] text-4xl sm:text-6xl", duration: 4.5, testId: "floater-sparkles" },
-  { emoji: "🔥", className: "right-[7%] bottom-[12%] text-5xl sm:text-7xl", duration: 3.5, testId: "floater-fire" },
+  { emoji: "😮", className: "left-[4%] top-[14%] text-5xl sm:text-7xl", duration: 4, testId: "floater-surprised" },
+  { emoji: "😍", className: "right-[4%] top-[16%] text-5xl sm:text-7xl", duration: 3, testId: "floater-heart-eyes" },
+  { emoji: "✨", className: "left-[7%] bottom-[16%] text-4xl sm:text-6xl", duration: 4.5, testId: "floater-sparkles" },
+  { emoji: "🔥", className: "right-[7%] bottom-[14%] text-5xl sm:text-7xl", duration: 3.5, testId: "floater-fire" },
 ];
 
 export default function TestimonialsSection() {
@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
         <motion.span
           key={f.testId}
           data-testid={f.testId}
-          className={`absolute select-none pointer-events-none ${f.className}`}
+          className={`hidden lg:block absolute select-none pointer-events-none ${f.className}`}
           animate={{ y: [0, -24, 0], rotate: [0, 12, -10, 0], scale: [1, 1.15, 1] }}
           transition={{ duration: f.duration, repeat: Infinity, ease: "easeInOut" }}
         >
