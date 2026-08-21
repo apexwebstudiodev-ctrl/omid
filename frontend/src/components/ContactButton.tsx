@@ -4,9 +4,14 @@ interface ContactButtonProps {
   testId?: string;
 }
 
+const GMAIL_URL =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=apexwebstudio.dev@gmail.com";
+
 export const ContactButton = ({ testId = "contact-me-button" }: ContactButtonProps) => (
   <motion.a
-    href="mailto:apexwebstudio.dev@gmail.com"
+    href={GMAIL_URL}
+    target="_blank"
+    rel="noopener noreferrer"
     data-testid={testId}
     className="inline-block rounded-full px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base text-white font-medium uppercase tracking-widest"
     style={{

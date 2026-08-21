@@ -42,7 +42,9 @@ export default function ContactSection() {
         <FadeIn delay={0.15} y={20} className="mt-8 sm:mt-10">
           <a
             data-testid="contact-email-link"
-            href="mailto:apexwebstudio.dev@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=apexwebstudio.dev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#0C0C0C] font-medium tracking-wide hover:opacity-60 transition-opacity duration-200"
             style={{ fontSize: "clamp(1rem, 2.4vw, 1.8rem)" }}
           >
@@ -52,7 +54,9 @@ export default function ContactSection() {
 
         <FadeIn delay={0.25} y={20} className="mt-10 sm:mt-12">
           <motion.a
-            href="mailto:apexwebstudio.dev@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=apexwebstudio.dev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             data-testid="contact-send-button"
             className="inline-block rounded-full px-12 py-4 sm:px-16 sm:py-5 text-sm sm:text-base text-white font-medium uppercase tracking-widest"
             style={{
@@ -119,7 +123,9 @@ export default function ContactSection() {
             </p>
             <a
               data-testid="footer-email-link"
-              href="mailto:apexwebstudio.dev@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=apexwebstudio.dev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
               className="flex items-center gap-3 text-[#D7E2EA] opacity-70 hover:opacity-100 transition-opacity duration-200 text-sm sm:text-base mb-3"
             >
               <Mail className="w-4 h-4" strokeWidth={1.5} />
