@@ -32,20 +32,6 @@ const ChromeSphere = () => (
   </div>
 );
 
-const GlassTorus = () => (
-  <div className="relative">
-    <img
-      data-testid="toolkit-torus"
-      src="./projects/toolkit-torus.png"
-      alt="Glass torus 3D render"
-      draggable={false}
-      loading="lazy"
-      className="w-[130px] sm:w-[170px] md:w-[210px] h-auto"
-    />
-    <Pedestal />
-  </div>
-);
-
 const Keyboard3D = () => (
   <div className="relative">
     <img
@@ -174,20 +160,17 @@ export default function ToolkitSection() {
         className="absolute inset-0 z-10"
         style={{ rotateX, rotateY, transformPerspective: 1200, willChange: "transform" }}
       >
-        <ParallaxLayer sx={sx} sy={sy} depth={0.9} floatDuration={7} className="absolute left-[4%] bottom-[8%]">
+        <ParallaxLayer sx={sx} sy={sy} depth={0.9} floatDuration={7} className="absolute left-[3%] sm:left-[6%] bottom-[6%] sm:bottom-[10%]">
           <Keyboard3D />
         </ParallaxLayer>
-        <ParallaxLayer sx={sx} sy={sy} depth={1.2} floatDuration={6} className="absolute right-[8%] top-[14%]">
+        <ParallaxLayer sx={sx} sy={sy} depth={1.2} floatDuration={6} className="absolute right-[4%] sm:right-[9%] top-[9%] sm:top-[14%]">
           <ChromeSphere />
         </ParallaxLayer>
-        <ParallaxLayer sx={sx} sy={sy} depth={0.6} floatDuration={8} floatDelay={0.6} className="absolute left-[8%] top-[12%]">
+        <ParallaxLayer sx={sx} sy={sy} depth={0.6} floatDuration={8} floatDelay={0.6} className="absolute left-[4%] sm:left-[9%] top-[8%] sm:top-[12%]">
           <Headphones3D />
         </ParallaxLayer>
-        <ParallaxLayer sx={sx} sy={sy} depth={1.0} floatDuration={6.5} floatDelay={0.3} className="absolute right-[9%] bottom-[14%]">
+        <ParallaxLayer sx={sx} sy={sy} depth={1.0} floatDuration={6.5} floatDelay={0.3} className="absolute right-[4%] sm:right-[10%] bottom-[11%] sm:bottom-[16%]">
           <Mouse3D />
-        </ParallaxLayer>
-        <ParallaxLayer sx={sx} sy={sy} depth={0.4} floatDuration={7.5} floatDelay={0.9} className="absolute left-[34%] bottom-[2%]">
-          <GlassTorus />
         </ParallaxLayer>
       </motion.div>
     </section>
