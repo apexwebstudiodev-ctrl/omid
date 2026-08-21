@@ -2,66 +2,90 @@ import React, { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform, MotionValue } from "framer-motion";
 import { FadeIn } from "../components/FadeIn";
 
-const BLEND: React.CSSProperties = { mixBlendMode: "screen" };
+const Pedestal = () => (
+  <>
+    <div
+      className="absolute left-1/2 -translate-x-1/2 -bottom-9 w-[80%] h-[30px] pointer-events-none"
+      style={{
+        background: "radial-gradient(ellipse, rgba(182,0,168,0.38) 0%, rgba(118,33,176,0.16) 45%, transparent 70%)",
+        filter: "blur(7px)",
+      }}
+    />
+    <div
+      className="absolute left-1/2 -translate-x-1/2 -bottom-6 w-[62%] h-[20px] rounded-[50%] border border-[rgba(182,0,168,0.45)] pointer-events-none"
+      style={{ boxShadow: "0 0 20px rgba(182,0,168,0.35), inset 0 0 14px rgba(182,0,168,0.22)" }}
+    />
+  </>
+);
 
 const ChromeSphere = () => (
-  <img
-    data-testid="toolkit-sphere"
-    src="./projects/toolkit-sphere.png"
-    alt="Chrome sphere 3D render"
-    draggable={false}
-    loading="lazy"
-    className="w-[110px] sm:w-[150px] md:w-[190px] h-auto"
-    style={BLEND}
-  />
+  <div className="relative">
+    <img
+      data-testid="toolkit-sphere"
+      src="./projects/toolkit-sphere.png"
+      alt="Chrome sphere 3D render"
+      draggable={false}
+      loading="lazy"
+      className="w-[110px] sm:w-[150px] md:w-[190px] h-auto"
+    />
+    <Pedestal />
+  </div>
 );
 
 const GlassTorus = () => (
-  <img
-    data-testid="toolkit-torus"
-    src="./projects/toolkit-torus.png"
-    alt="Glass torus 3D render"
-    draggable={false}
-    loading="lazy"
-    className="w-[130px] sm:w-[170px] md:w-[210px] h-auto"
-    style={BLEND}
-  />
+  <div className="relative">
+    <img
+      data-testid="toolkit-torus"
+      src="./projects/toolkit-torus.png"
+      alt="Glass torus 3D render"
+      draggable={false}
+      loading="lazy"
+      className="w-[130px] sm:w-[170px] md:w-[210px] h-auto"
+    />
+    <Pedestal />
+  </div>
 );
 
 const Keyboard3D = () => (
-  <img
-    data-testid="toolkit-keyboard"
-    src="./projects/toolkit-keyboard.png"
-    alt="Mechanical keyboard 3D render"
-    draggable={false}
-    loading="lazy"
-    className="w-[240px] sm:w-[340px] md:w-[420px] h-auto"
-    style={BLEND}
-  />
+  <div className="relative">
+    <img
+      data-testid="toolkit-keyboard"
+      src="./projects/toolkit-keyboard.png"
+      alt="Mechanical keyboard 3D render"
+      draggable={false}
+      loading="lazy"
+      className="w-[240px] sm:w-[340px] md:w-[420px] h-auto"
+    />
+    <Pedestal />
+  </div>
 );
 
 const Mouse3D = () => (
-  <img
-    data-testid="toolkit-mouse"
-    src="./projects/toolkit-mouse.png"
-    alt="Premium mouse 3D render"
-    draggable={false}
-    loading="lazy"
-    className="w-[100px] sm:w-[130px] md:w-[160px] h-auto"
-    style={BLEND}
-  />
+  <div className="relative">
+    <img
+      data-testid="toolkit-mouse"
+      src="./projects/toolkit-mouse.png"
+      alt="Premium mouse 3D render"
+      draggable={false}
+      loading="lazy"
+      className="w-[100px] sm:w-[130px] md:w-[160px] h-auto"
+    />
+    <Pedestal />
+  </div>
 );
 
 const Headphones3D = () => (
-  <img
-    data-testid="toolkit-headphones"
-    src="./projects/toolkit-headphones.png"
-    alt="Studio headphones 3D render"
-    draggable={false}
-    loading="lazy"
-    className="w-[130px] sm:w-[170px] md:w-[210px] h-auto"
-    style={BLEND}
-  />
+  <div className="relative">
+    <img
+      data-testid="toolkit-headphones"
+      src="./projects/toolkit-headphones.png"
+      alt="Studio headphones 3D render"
+      draggable={false}
+      loading="lazy"
+      className="w-[130px] sm:w-[170px] md:w-[210px] h-auto"
+    />
+    <Pedestal />
+  </div>
 );
 
 interface LayerProps {
@@ -80,7 +104,6 @@ const ParallaxLayer = ({ sx, sy, depth, className, floatDelay = 0, floatDuration
   return (
     <motion.div className={className} style={{ x, y, willChange: "transform" }}>
       <motion.div
-        style={{ background: "#0C0C0C" }}
         animate={{ y: [0, -14, 0], rotate: [0, 2, 0] }}
         transition={{ duration: floatDuration, delay: floatDelay, repeat: Infinity, ease: "easeInOut" }}
       >
