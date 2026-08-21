@@ -15,19 +15,19 @@ const PROJECTS: Project[] = [
     number: "01",
     name: "The Golden Crumb",
     category: "Personal",
-    images: ["/projects/gc-1.jpg", "/projects/gc-2.jpg", "/projects/gc-3.jpg"],
+    images: ["./projects/gc-1.jpg", "./projects/gc-2.jpg", "./projects/gc-3.jpg"],
   },
   {
     number: "02",
     name: "Tandoor Flame",
     category: "Personal",
-    images: ["/projects/tf-1.jpg", "/projects/tf-2.jpg", "/projects/tf-3.jpg"],
+    images: ["./projects/tf-1.jpg", "./projects/tf-2.jpg", "./projects/tf-3.jpg"],
   },
   {
     number: "03",
     name: "Eagle Fitness Centre",
     category: "Client",
-    images: ["/projects/gym-1.jpg", "/projects/gym-2.jpg", "/projects/gym-3.jpg"],
+    images: ["./projects/gym-1.jpg", "./projects/gym-2.jpg", "./projects/gym-3.jpg"],
   },
 ];
 

@@ -14,37 +14,37 @@ const TESTIMONIALS: Testimonial[] = [
     quote: "Amazing design from Omid — very unique and brilliant.",
     name: "Eagle Fitness Centre",
     title: "Fitness Gym",
-    avatar: "/projects/pfp-gym.png",
+    avatar: "./projects/pfp-gym.png",
   },
   {
     quote: "WOW! Spectacular work from him — definitely gonna hire him for our next project in 3 months.",
     name: "The Golden Crumb",
     title: "Bakery",
-    avatar: "/projects/pfp-bread.png",
+    avatar: "./projects/pfp-bread.png",
   },
   {
     quote: "All of the animation and design choices — it was all PERFECT!",
     name: "Tandoor Flame",
     title: "Restaurant",
-    avatar: "/projects/pfp-flame.png",
+    avatar: "./projects/pfp-flame.png",
   },
   {
     quote: "Amazing design from Omid — very unique and brilliant.",
     name: "Eagle Fitness Centre",
     title: "Fitness Gym",
-    avatar: "/projects/pfp-gym.png",
+    avatar: "./projects/pfp-gym.png",
   },
   {
     quote: "WOW! Spectacular work from him — definitely gonna hire him for our next project in 3 months.",
     name: "The Golden Crumb",
     title: "Bakery",
-    avatar: "/projects/pfp-bread.png",
+    avatar: "./projects/pfp-bread.png",
   },
   {
     quote: "All of the animation and design choices — it was all PERFECT!",
     name: "Tandoor Flame",
     title: "Restaurant",
-    avatar: "/projects/pfp-flame.png",
+    avatar: "./projects/pfp-flame.png",
   },
 ];
 

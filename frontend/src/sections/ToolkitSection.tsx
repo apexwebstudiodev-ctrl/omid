@@ -7,7 +7,7 @@ const BLEND: React.CSSProperties = { mixBlendMode: "screen" };
 const ChromeSphere = () => (
   <img
     data-testid="toolkit-sphere"
-    src="/projects/toolkit-sphere.png"
+    src="./projects/toolkit-sphere.png"
     alt="Chrome sphere 3D render"
     draggable={false}
     loading="lazy"
@@ -19,7 +19,7 @@ const ChromeSphere = () => (
 const GlassTorus = () => (
   <img
     data-testid="toolkit-torus"
-    src="/projects/toolkit-torus.png"
+    src="./projects/toolkit-torus.png"
     alt="Glass torus 3D render"
     draggable={false}
     loading="lazy"
@@ -31,7 +31,7 @@ const GlassTorus = () => (
 const Keyboard3D = () => (
   <img
     data-testid="toolkit-keyboard"
-    src="/projects/toolkit-keyboard.png"
+    src="./projects/toolkit-keyboard.png"
     alt="Mechanical keyboard 3D render"
     draggable={false}
     loading="lazy"
@@ -43,7 +43,7 @@ const Keyboard3D = () => (
 const Mouse3D = () => (
   <img
     data-testid="toolkit-mouse"
-    src="/projects/toolkit-mouse.png"
+    src="./projects/toolkit-mouse.png"
     alt="Premium mouse 3D render"
     draggable={false}
     loading="lazy"
@@ -55,7 +55,7 @@ const Mouse3D = () => (
 const Headphones3D = () => (
   <img
     data-testid="toolkit-headphones"
-    src="/projects/toolkit-headphones.png"
+    src="./projects/toolkit-headphones.png"
     alt="Studio headphones 3D render"
     draggable={false}
     loading="lazy"
