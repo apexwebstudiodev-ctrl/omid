@@ -14,7 +14,7 @@ const PROJECTS: Project[] = [
   {
     number: "01",
     name: "The Golden Crumb",
-    category: "Personal",
+    category: "Client",
     images: ["./projects/gc-1.jpg", "./projects/gc-2.jpg", "./projects/gc-3.jpg"],
   },
   {
