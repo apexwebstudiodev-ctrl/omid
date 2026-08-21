@@ -18,15 +18,15 @@ const Pedestal = () => (
   </>
 );
 
-const ChromeSphere = () => (
+const Laptop3D = () => (
   <div className="relative">
     <img
-      data-testid="toolkit-sphere"
-      src="./projects/toolkit-sphere.png"
-      alt="Chrome sphere 3D render"
+      data-testid="toolkit-laptop"
+      src="./projects/toolkit-laptop.png"
+      alt="Laptop 3D render"
       draggable={false}
       loading="lazy"
-      className="w-[110px] sm:w-[150px] md:w-[190px] h-auto"
+      className="w-[150px] sm:w-[210px] md:w-[260px] h-auto"
     />
     <Pedestal />
   </div>
@@ -164,7 +164,7 @@ export default function ToolkitSection() {
           <Keyboard3D />
         </ParallaxLayer>
         <ParallaxLayer sx={sx} sy={sy} depth={1.2} floatDuration={6} className="absolute right-[4%] sm:right-[9%] top-[9%] sm:top-[14%]">
-          <ChromeSphere />
+          <Laptop3D />
         </ParallaxLayer>
         <ParallaxLayer sx={sx} sy={sy} depth={0.6} floatDuration={8} floatDelay={0.6} className="absolute left-[4%] sm:left-[9%] top-[8%] sm:top-[12%]">
           <Headphones3D />
