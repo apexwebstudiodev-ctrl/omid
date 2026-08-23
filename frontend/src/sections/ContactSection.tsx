@@ -149,7 +149,7 @@ export default function ContactSection() {
             &copy; 2026 omid
           </p>
           <p data-testid="footer-tagline" className="text-[#D7E2EA] opacity-50 text-xs sm:text-sm uppercase tracking-widest">
-            3d creator
+            ui/ux artist
           </p>
         </div>
       </footer>
