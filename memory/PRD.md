@@ -14,7 +14,7 @@ Dark (#0C0C0C) single-page 3D Creator portfolio landing page (originally specced
 - src/sections: HeroSection, MarqueeSection, AboutSection, ServicesSection, ProjectsSection, ContactSection
 - src/components: FadeIn, Magnet, AnimatedText, ContactButton, LiveProjectButton, CustomCursor
 - Lenis momentum scrolling in App.tsx; anchor nav links smoothed via lenis.scrollTo
-- Title: "Omid — 3D Creator"
+- Title: "Omid — UI/UX Artist" (rebranded from "3D Creator" 2026-08-23: hero tagline, footer tagline, page title)
 
 ## Implemented (2026-08-19)
 - All 5 specced sections + contact footer with email/WhatsApp/Instagram
