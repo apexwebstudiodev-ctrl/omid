@@ -9,9 +9,9 @@ const SERVICES = [
   },
   {
     number: "02",
-    name: "Rendering",
+    name: "AI Automation",
     description:
-      "High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.",
+      "Smart AI-powered workflows that take repetitive tasks off your plate, saving you hours every week so you can focus on growing your business.",
   },
   {
     number: "03",
